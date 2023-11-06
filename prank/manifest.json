@@ -1,0 +1,16 @@
+{
+    "name": "Totally harmless extension!",
+    "description": "Legit harmless!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["prank.js"]
+        }
+    ]
+  }
